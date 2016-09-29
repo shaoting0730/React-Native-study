@@ -1,0 +1,28 @@
+{
+  "data":[
+   {
+     "icon":"danjianbao",
+     "title":"单肩包"
+   }, 
+       {
+     "icon":"liantiaobao",
+     "title":"链条包"
+   }, 
+       {
+     "icon":"qianbao",
+     "title":"钱包"
+   }, 
+       {
+     "icon":"shoutibao",
+     "title":"手提包"
+   }, 
+       {
+     "icon":"shuangjianbao",
+     "title":"双肩包"
+   }, 
+       {
+     "icon":"xiekuabao",
+     "title":"斜挎包"
+   }
+  ]
+}

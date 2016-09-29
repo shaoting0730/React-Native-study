@@ -1,0 +1,17 @@
+{
+
+  // relative path from project root to the .app binary that is generated after building iOS
+  "iosTarget": "ios/build/Build/Products/Debug-iphonesimulator/Project.app",
+
+  // relative path from project root to the xcode project or workspace file for iOS build
+  "iosProject": "ios/Project.xcodeproj",
+
+  // scheme name to use when building in Deco
+  "iosBuildScheme": "Project",
+
+  // relative path from project to the AndroidManifest.xml file for your application
+  "androidManifest": "android/app/src/main/AndroidManifest.xml",
+
+  // port for the packager to run on
+  "packagerPort": 8081
+}
