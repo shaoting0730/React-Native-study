@@ -36,7 +36,24 @@ var Project = React.createClass({
     );
   },
   //返回具体的cell
-  renderRow(rowData,sectionID,rowID,highlightRow){
+  renderRow(rowData,sect    //设置初始值
+  getInitialState(){
+    //设置数据源
+    var ds = new ListView.DataSource({rowHasChanged:(r1,r2) => r1 !== r2}); //当且仅当cell中的任意两行不相等时才重新渲染
+    //设置返回数据
+    return{
+      dataSource:ds.cloneWithRows(Wine)
+    }
+  },
+  render(){
+    return(
+        <ListView
+            dataSource={this.state.dataSource} //数据源
+            renderRow={this.renderRow} //返回具体的cell,有四个参数 => 1:一条信息 2:分组ID 3:行ID 4:标记是否高亮选中的状态信息.不带()表示参数自传递
+        />
+    );
+  },
+  //ionID,rowID,highlightRow){
     return(
           <View style={styles.cellViewStyle}>
             {/*左边的图片*/}
