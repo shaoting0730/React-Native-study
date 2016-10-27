@@ -40,8 +40,8 @@ var Project = React.createClass({
         })
             .then((response) => response.json()) //把response转为json
             .then((responseData) => { // 上面的转好的json
-                    alert(responseData); /
-                // console.log(responseData);
+                    // alert(responseData);
+                console.log(responseData);
             })
             .catch((error)=> {
                 alert('错误了');
